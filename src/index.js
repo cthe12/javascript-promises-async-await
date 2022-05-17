@@ -6,5 +6,5 @@ export function fetchMovies() {
     fetchWithTimeout(1000).then(resolveFunction)
 }
 moviePromise = fetchMovies()
-moviePromise.then(results)
-console.log(results)
+moviePromise.then(results =>
+console.log(results))
